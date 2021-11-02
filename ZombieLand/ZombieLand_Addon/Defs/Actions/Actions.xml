@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ZombieLand_Addon.ZombieAction>
+    <defName>ZombieMinerAttack</defName>
+    <label>zombie miner attack</label>
+    <actionWorker>ZombieLand_Addon.ActionWorkers.ZombieAttack</actionWorker>
+	<zombieType>Miner</zombieType>
+	<spawnHowType>AllOverTheMap</spawnHowType>
+	<count>10</count>
+  </ZombieLand_Addon.ZombieAction>
+  <ZombieLand_Addon.ZombieAction>
+    <defName>ZombieRandomAttack</defName>
+    <label>random zombie attack</label>
+    <actionWorker>ZombieLand_Addon.ActionWorkers.ZombieAttack</actionWorker>
+	<zombieType>Random</zombieType>
+	<spawnHowType>FromTheEdges</spawnHowType>
+	<count>10</count>
+  </ZombieLand_Addon.ZombieAction>
+</Defs>

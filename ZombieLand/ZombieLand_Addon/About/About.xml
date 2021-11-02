@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>ZombieLand - ToolKitCreator Addon</name>
+	<author>MrPurple6411</author>
+    <packageId>MrPurple6411.ZombieLandAddon</packageId>
+	<supportedVersions>
+        <li>1.3</li>
+	</supportedVersions>
+	<description>This mod adds some ZombieLand mod actions to the ToolKitCreator Twitch intigration system.
+Using ToolKitCreator you can combine multiple 'unique' actions per event to truely customize your viewers experience.
+		
+The config to add actions is modfolder\Defs\Actions\Actions.xml
+	
+I already added 2 to give you an example. 
+The first spawns 10 Miner type zombies and the second spawns 10 random zombies.
+		
+defName: internal code name for the action (cannot have spaces and must be unique)
+label: this is what will show in the ToolKitCreator event creators action drop down
+actionWorker: DO NOT CHANGE THIS!!! This is coded to my custom action worker I made to deal with these custom actions.
+
+zombieType: can be one of the following per action. 
+``Random, SuicideBomber, ToxicSplasher, TankyOperator, Miner, Electrifier, Albino, DarkSlimer, Healer, Normal``
+
+spawnHowType: Same effect as the options in ZombieLand itself
+``AllOverTheMap`` or ``FromTheEdges``
+
+count: How many zombies this action will spawn.
+	</description>
+    <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>hodlhodl.toolkitcore</packageId>
+      <displayName>ToolkitCore</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2018368654</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>hodlhodl.toolkitpawnqueue</packageId>
+      <displayName>ToolkitPawnQueue</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2073156511</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>hodlhodl.toolkitcreator</packageId>
+      <displayName>ToolkitCreator</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2099493475</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>brrainz.zombieland</packageId>
+      <displayName>Zombieland</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/928376710</steamWorkshopUrl>
+    </li>
+    </modDependencies>
+  <incompatibleWith>
+    <li>hodlhodl.twitchtoolkit</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>hodlhodl.toolkitcreator</li>
+    <li>brrainz.zombieland</li>
+  </loadAfter>
+</ModMetaData>
