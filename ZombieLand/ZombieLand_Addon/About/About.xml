@@ -26,6 +26,8 @@ spawnHowType: Same effect as the options in ZombieLand itself
 ``AllOverTheMap`` or ``FromTheEdges``
 
 count: How many zombies this action will spawn.
+
+Eventually I will be making an ingame GUI to make it easier to create actions but for now it is all done through adding new actions to the Actions.xml file.
 	</description>
     <modDependencies>
     <li>
